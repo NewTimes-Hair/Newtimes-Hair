@@ -8,9 +8,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NewTimes Hair – Professional Human Hair Wig Blog</title>
   <link rel="stylesheet" href="/Newtimes-Hair/assets/styles.css" />
+  <style>
+    header {
+      background: url('/Newtimes-Hair/assets/banner.jpg') center/cover no-repeat;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: #ffffffaa;
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+    }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card { padding: 20px; border: 1px solid #ddd; border-radius: 10px; background: white; }
+    footer { margin-top: 40px; text-align: center; padding: 20px 0; border-top: 1px solid #eee; }
+    .logo { font-size: 24px; font-weight: bold; }
+  </style>
 </head>
 <body>
   <nav>
+    <a href="/Newtimes-Hair/index.html" class="logo">NewTimes Hair</a>
     <a href="/Newtimes-Hair/index.html">Home</a>
     <a href="/Newtimes-Hair/about.html">About</a>
     <a href="/Newtimes-Hair/articles/human-hair-wig-maintenance.html">Wig Maintenance</a>
@@ -18,23 +41,27 @@
 
   <header>
     <h1>NewTimes Hair Blog</h1>
-    <p>Your trusted guide for real human hair wigs, systems, and expert care tips.</p>
+    <p>Your trusted guide for real human hair wigs, professional styling, and expert maintenance tips.</p>
   </header>
 
-  <section>
-    <h2>Featured Article</h2>
-    <article class="card">
-      <h3><a href="/Newtimes-Hair/articles/human-hair-wig-maintenance.html">Human Hair Wig Maintenance: Real Routines That Actually Work</a></h3>
-      <p>Learn the real maintenance routines wig owners use to keep their human hair wigs soft, silky, and long-lasting. From washing frequency to conditioning methods—this guide covers everything.</p>
-      <a class="read-more" href="/Newtimes-Hair/articles/human-hair-wig-maintenance.html">Read More →</a>
-    </article>
-  </section>
+  <main>
+    <section>
+      <h2>Featured Articles</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3><a href="/Newtimes-Hair/articles/human-hair-wig-maintenance.html">Human Hair Wig Maintenance: Real Routines That Actually Work</a></h3>
+          <p>Discover how real wig wearers keep their human hair wigs soft, silky, and long-lasting.</p>
+          <a class="read-more" href="/Newtimes-Hair/articles/human-hair-wig-maintenance.html">Read More →</a>
+        </article>
+      </div>
+    </section>
 
-  <section>
-    <h2>About NewTimes Hair</h2>
-    <p>We specialize in premium human hair wigs and hair systems, serving global customers with natural-looking, durable, and comfortable solutions. Explore our blog to learn professional maintenance tips, styling techniques, and more.</p>
-    <a class="read-more" href="/Newtimes-Hair/about.html">Learn More →</a>
-  </section>
+    <section>
+      <h2>About NewTimes Hair</h2>
+      <p>We specialize in premium human hair wigs and hair systems trusted by professionals worldwide.</p>
+      <a class="read-more" href="/Newtimes-Hair/about.html">Learn More →</a>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 NewTimes Hair. All rights reserved.</p>
